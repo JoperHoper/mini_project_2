@@ -11,11 +11,16 @@
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
+    "@mui/base": "^5.0.0-beta.40",
     "@mui/icons-material": "^5.16.5",
     "@mui/material": "^5.16.5",
+    "animate.css": "^4.1.1",
+    "echarts": "^5.5.1",
+    "echarts-for-react": "^3.0.2",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-fast-marquee": "^1.6.5"
   },
   "devDependencies": {
     "eslint": "^8",

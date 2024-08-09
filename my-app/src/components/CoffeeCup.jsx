@@ -1,14 +1,14 @@
-import CoffeeAnimation from "./CoffeeAnimation.module.css"
+import "@/components/CoffeeAnimation.css"
 
 const CoffeeCup = () => {
     return (
-        <span className={CoffeeAnimation.animationContainer}>
-            <div className={CoffeeAnimation.animationWrapper}>
-                <div className={CoffeeAnimation.cup}>
-                    <span className={CoffeeAnimation.steam}></span>
-                    <span className={CoffeeAnimation.steam}></span>
-                    <span className={CoffeeAnimation.steam}></span>
-                    <div className={CoffeeAnimation.cupHandle}></div>
+        <span className="animationContainer">
+            <div className="animationWrapper">
+                <div className="cup">
+                    <span className="steam"></span>
+                    <span className="steam"></span>
+                    <span className="steam"></span>
+                    <div className="cupHandle"></div>
                 </div>
             </div>
         </span>

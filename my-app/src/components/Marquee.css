@@ -7,6 +7,7 @@
 
 .marqueeContent {
   justify-content: center;
+  width: 100vw;
 }
 
 .marqueeText {

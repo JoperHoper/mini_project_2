@@ -1,0 +1,62 @@
+.formContainer {
+  height: 69.5vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.coffeeImgContainer {
+  display: flex;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.formControlContainer {
+  height: inherit;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputContainer {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputContainer input {
+  width: 80%;
+  padding: 5px 12px;
+  margin: 8px 0px;
+}
+
+.inputContainer label {
+  font-size: 18px;
+}
+
+.inputContainer button {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: #af8f6f;
+  color: antiquewhite;
+  box-shadow: 0px 4px 8px #6f4e37;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.inputContainer button:hover {
+  background-color: #a88769;
+}
+
+.vl {
+  border-left: 4px solid #af8f6f;
+  height: 400px;
+  margin: auto;
+}

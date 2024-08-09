@@ -1,8 +1,9 @@
-import style from "./Footer.module.css"
+import "@/components/Footer.css"
+
 
 const Footer = () => {
     return (
-        <footer className={style.footer}>Created by Josephine</footer>
+        <footer className="footer">Created by Josephine</footer>
     )
 }
 

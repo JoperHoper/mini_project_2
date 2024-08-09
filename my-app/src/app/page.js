@@ -1,7 +1,6 @@
+"use client";
+import CoffeeCup from "@/components/CoffeeCup";
+
 export default function Home() {
-  return (
-    <main>
-      <div>HomePage</div>
-    </main>
-  );
+  return <CoffeeCup />;
 }
