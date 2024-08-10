@@ -1,5 +1,5 @@
 .formContainer {
-  height: 69.5vh;
+  height: 75vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -59,4 +59,40 @@
   border-left: 4px solid #af8f6f;
   height: 400px;
   margin: auto;
+}
+
+.mobileHeader {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .vl {
+    display: none;
+  }
+  .coffeeImgContainer {
+    display: none;
+  }
+  .formContainer {
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+  .formControlContainer {
+    height: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .inputContainer input {
+    width: 50%;
+    padding: 5px 12px;
+    margin: 8px 0px;
+  }
+  .mobileHeader {
+    display: flex;
+    color: #6f4e37;
+  }
 }

@@ -1,0 +1,15 @@
+.eChartContainer {
+  height: 75vh;
+}
+
+.eChartStyle {
+  height: 600px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .eChartStyle {
+    margin-bottom: 20vh;
+  }
+}

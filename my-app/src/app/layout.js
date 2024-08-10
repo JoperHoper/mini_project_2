@@ -1,15 +1,10 @@
-import { Montserrat } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import MarqueeBanner from "@/components/MarqueeBanner";
 import CoffeeProvider from "@/context/CoffeeContext";
-
-const mont = Montserrat({
-  weight: "200",
-  style: "normal",
-  subsets: ["vietnamese"],
-});
+import { ThemeProvider } from "@mui/material";
+import { theme } from "@/components/FontFamily";
 
 export const metadata = {
   title: "Create Next App",
@@ -20,10 +15,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <MarqueeBanner />
-        <NavBar className={mont} />
-        <CoffeeProvider>{children}</CoffeeProvider>
-        <Footer />
+        <ThemeProvider theme={theme}>
+          <MarqueeBanner />
+          <NavBar />
+          <CoffeeProvider>{children}</CoffeeProvider>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

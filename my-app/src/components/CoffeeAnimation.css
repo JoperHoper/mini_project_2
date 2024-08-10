@@ -85,3 +85,23 @@
   background: #8e5a3433;
   animation-delay: 1s;
 }
+
+@keyframes shrinkHandle {
+  0% {
+    right: -100px;
+    width: 65px;
+    height: 120px;
+  }
+  100% {
+    right: -75px;
+    width: 40px;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cup .cupHandle {
+    animation: shrinkHandle 1000ms;
+    animation-fill-mode: forwards;
+  }
+}

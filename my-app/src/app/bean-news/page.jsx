@@ -2,6 +2,7 @@
 import { useRef, useState, useEffect } from "react";
 import useLocalStorage from "@/hook/useLocalStorage"
 import "@/components/FormStyle.css"
+import { Typography } from "@mui/material";
 
 export default function BeanNews() {
     const [obj, setObj] = useLocalStorage("isSubscribed", false);
@@ -57,18 +58,22 @@ export default function BeanNews() {
     const UserForm = () => {
         return (
             <>
-                <label>Name <span style={{ color: "#C80036" }}>*</span></label>
+                <label><Typography>Name
+                    <span style={{ color: "#C80036" }}>*</span>
+                </Typography></label>
                 <input ref={inputName} id="name" value={nameInput} placeholder="Enter Name" onFocus={handleFocus} onChange={handleNameInput} type="text" required />
-                <label>Email <span style={{ color: "#C80036" }}>*</span></label>
+                <label><Typography>Email
+                    <span style={{ color: "#C80036" }}>*</span>
+                </Typography></label>
                 <input ref={inputEmail} id="email" defaultValue={emailInput} placeholder="Enter Email" onFocus={handleFocus} onChange={handleEmailInput} type="email" required />
-                <button onClick={handleSubscription} >Subscribe</button>
+                <button onClick={handleSubscription}><Typography>Subscribe</Typography></button>
             </>
         )
     }
 
     const SubmittedForm = () => {
         return (
-            <h1>Subscribed! Check out the brewing good news!</h1>
+            <Typography>Subscribed! Check out the brewing good news!</Typography>
         )
     }
 
@@ -79,6 +84,7 @@ export default function BeanNews() {
             </div>
             <div className="vl" />
             <div className="formControlContainer">
+                <Typography variant="h5" className="mobileHeader">BeaNews Subscription</Typography>
                 <div className="inputContainer">
                     {display == null ? <p>loading...</p> : display ? <SubmittedForm /> : <UserForm />}
                 </div>

@@ -4,6 +4,7 @@ import ActionAreaCard from "@/components/ActionAreaCard";
 import { useCoffeeContext } from "@/context/CoffeeContext";
 import "../../components/FeelingCoffee.css";
 import 'animate.css';
+import { Typography } from "@mui/material";
 
 const CoffeeRandomizer = () => {
     const { coffeeResult, getDataByCoffeeType, coffeeTypeMap } = useCoffeeContext();
@@ -43,7 +44,7 @@ const CoffeeRandomizer = () => {
         <div className="displayContainer">
             <div className="displayCard">{coffeeDisplayHandler()}</div>
             <div className="btnContainer">
-                <button className="gachaCoffeeBtn" onClick={getRandomCoffee}>I'm Feelin' Coffee</button>
+                <button className="gachaCoffeeBtn" onClick={getRandomCoffee}><Typography>I'm Feelin' Coffee</Typography></button>
             </div>
         </div>
     );

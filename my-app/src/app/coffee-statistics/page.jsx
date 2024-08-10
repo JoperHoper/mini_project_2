@@ -1,6 +1,6 @@
 "use client"
 import EChartsReact from 'echarts-for-react';
-import { useEffect } from 'react';
+import "@/components/CoffeeStats.css"
 
 const CoffeeGraph = () => {
     const coffeeData = [
@@ -40,11 +40,6 @@ const CoffeeGraph = () => {
         tooltip: {
             trigger: "item",
         },
-        legend: {
-            orient: "horizontal",
-            left: "center",
-            bottom: 20,
-        },
         series: [
             {
                 name: "Access From",
@@ -63,8 +58,8 @@ const CoffeeGraph = () => {
     };
 
     return (
-        <div>
-            <EChartsReact style={{ height: '600px', width: '100%', paddingTop: "10px" }} option={option} />
+        <div className='eChartContainer'>
+            <EChartsReact className='eChartStyle' style={{ height: '600px', width: '100%', paddingTop: "10px" }} option={option} />
         </div>
     )
 };

@@ -1,7 +1,6 @@
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
   height: 100vh;
   background-color: #f8f4e1;
   margin: 0px;
@@ -24,6 +23,11 @@ a {
   color: #543310;
   padding: 10px;
   position: sticky;
+  height: 60px;
+}
+
+.menuDropdown {
+  display: none;
 }
 
 .active {
@@ -41,8 +45,24 @@ a {
   align-items: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.subscribeMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .menuDropdown {
+    display: block;
+  }
+  .subscribeMobile {
+    display: flex;
+  }
+  .mobileDropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
   }
 }
